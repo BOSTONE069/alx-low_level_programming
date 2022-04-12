@@ -7,6 +7,6 @@
 * Description:This is file containing all declations of all functions
 */
 
-int _putchar(char letter);
+int _putchar(int letter);
 
 #endif
