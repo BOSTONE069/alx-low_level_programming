@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include "main.h"
 
-void print_alphabet(void)
+int main ()
 {
-    char x;
+    char letter;
 
-    for (x = 'a'; x <= 'z'; x++)
-         _putchar(x);
+    for (letter = 'a'; letter <= 'z'; letter++)
+         putchar(letter);
     
-    _putchar('\n');
+    putchar('\n');
     
 }
