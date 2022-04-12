@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints the alphabet letters in lower case 10 times
@@ -13,9 +13,9 @@ int main ()
 
     while (count++ <= 9){
         for (letter = 'a'; letter <= 'z'; letter++)
-            putchar(letter);
+            _putchar(letter);
     
-        putchar('\n');
+        _putchar('\n');
     }
     
     return 0;
