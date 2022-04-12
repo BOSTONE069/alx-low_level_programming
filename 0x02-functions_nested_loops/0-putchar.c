@@ -1,17 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * @brief 
+ *  main - returns the putchar
  * 
- * @return int 
+ * auth: Bostone Ochieng
  */
 
 int main() 
 {
-  putchar('putchar');
+       _putchar('_putchar');
 
-  putchar('\n');
+       _putchar('\n');
 
-  return 0;
+       return 0;
 }
