@@ -8,7 +8,7 @@
 
 int main ()
 {
-    int letter = c;
+    int letter;
     
     if (letter >= 'a' && letter <= 'z')
         return(1);
