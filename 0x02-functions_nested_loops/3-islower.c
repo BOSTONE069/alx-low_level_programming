@@ -2,7 +2,7 @@
 
 /**
  * _islower - main block
- * Description: checks for lower case letters
+ * Description: function that checks for lowercase letters
  */
 int _islower(int c)
 {
