@@ -1,29 +1,28 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - maincomparison with n 
+ * print_sign - main block
+ * Description: Function that prints the sign of a number
  * Returns 1 and prints + if n is greater than zero
  * Returns 0 and prints 0 if n is zero
  * Returns -1 and prints - if n is less than zero
  * auth: Bostone Ochieng
  */
-
-int main()
+int print_sign(int n)
 {
-    int n;
 
     if (n > 0){
-        putchar('+');
+        _putchar('+');
         return(1);
     }
 
     else if (n == 0){
-        putchar('0');
+        _putchar('0');
         return(0);
     }
 
     else{
-        putchar('-');
+        _putchar('-');
         return(-1);
     }
        
