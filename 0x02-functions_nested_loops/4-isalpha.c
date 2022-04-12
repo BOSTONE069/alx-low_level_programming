@@ -1,19 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - This is checking whether a letter is upper or lowercase
- * 
- * auth: Bostone Ochieng
+ * _isalpha - This is checking whether a letter is upper or lowercase
+ * Description: function for checking if a letter is a upper or lower case
  */
-
-int main ()
+int _isalpha(int c)
 {
-    int letter;
 
-    if ((letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z'))
+    if ((c >= 'a' && c <= 'z') || (c  >= 'A' && c <= 'Z')){
           return(1);
-    else;
+    }   
+    else{
           return(0);
-
-    putchar('\n');
+    }
 }
