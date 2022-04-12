@@ -1,19 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - checks for lower case letters
- * 
- * author: Bostone Ochieng
+ * _islower - main block
+ * Descrition: checks for lower case letters
  */
-
-int main ()
+int _islower(int c)
 {
-    int letter;
     
-    if (letter >= 'a' && letter <= 'z')
+    if (c >= 'a' && c <= 'z'){
         return(1);
-    else;
+    }
+    else{
         return(0);
-    
-    putchar('\n');
+    }
 }
