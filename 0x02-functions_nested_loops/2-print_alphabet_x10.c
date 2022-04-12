@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * main - prints the alphabet letters in lower case 10 times
- * print_alphabet_x10: Used for printing alphabets
- * author: Bostone Ochieng
+ * print_alphabet_x10 - main block
+ * Description: Used for printing alphabets 10 times
  */
-
 void print_alphabet_x10(void)
 {
         int count = 0;
