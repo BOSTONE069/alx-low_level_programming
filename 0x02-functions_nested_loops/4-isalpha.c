@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet
- *
- * Return: void
+ * _isalpha - This is checking whether a letter is upper or lowercase
+ * Description: function for checking if a letter is a upper or lower case
  */
-void print_alphabet(void)
+int _isalpha(int c)
 {
-	char letter = 'a';
 
-	while (letter <= 'z')
-	{
-		_putchar(letter);
-		letter++;
-	}
-	_putchar('\n');
+    if ((c >= 'a' && c <= 'z') || (c  >= 'A' && c <= 'Z')){
+          return(1);
+    }   
+    else{
+          return(0);
+    }
 }
