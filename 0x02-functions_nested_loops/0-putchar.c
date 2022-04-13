@@ -1,16 +1,11 @@
 #include "main.h"
 
 /**
- *  main - returns the putchar
- * 
- * auth: Bostone Ochieng
+ *  _putchar - mainblock
+ * Description: function helps in the output of char
  */
-
-int main(void) 
+int _putchar(char letter)
 {
-       _putchar('_putchar');
-
-       _putchar('\n');
-
-       return (0);
+  char letter = '_putchar';
+  _putchar(letter);
 }
