@@ -1,12 +1,20 @@
 #include "main.h"
 
 /**
- * add - Adds two integers
- * @x:  This is the first integer
- * @y: This is the second integer
- * Return: The result of the addition
+ * add - adds two integers
+ * @n1: integer 1
+ * @n2: integer 2
+ *
+ * Description: give two integers, returns sum
+ *
+ * Return: sum
  */
+
 int add(int x, int y)
 {
-    return(x + y);
+	int sum;
+
+	sum = x + y;
+
+	return (sum);
 }
