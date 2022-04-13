@@ -3,6 +3,7 @@
  * print_last_digit - main block
  * Description : This prints the last digit of a number
  * @c: Thei is the number in question
+ * Return: Always
  */
 int print_last_digit(int c)
 {
@@ -14,6 +15,5 @@ int print_last_digit(int c)
  _putchar(last_digit + '0');
 
  return(last_digit);
- 
 
 }
