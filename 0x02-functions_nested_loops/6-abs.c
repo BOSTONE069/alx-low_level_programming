@@ -2,8 +2,9 @@
 
 /**
  * _abs - main block
- * Description - This print the absolute value of the integer 
- * 
+ * Description - This print the absolute value of the integer
+ * @c: This the entered value
+ * Return: c or -c
  */
 int _abs(int c)
 {
