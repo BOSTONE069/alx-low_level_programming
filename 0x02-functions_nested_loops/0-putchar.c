@@ -1,11 +1,23 @@
 #include "main.h"
 
 /**
- *  _putchar - mainblock
- * Description: function helps in the output of char
+ * main - prints _putchar
+ *
+ * Description: prints _putchar
+ *
+ * Return: 0 (Success)
  */
-int _putchar(char letter)
+
+int main(void)
 {
-  char letter = '_putchar';
-  _putchar(letter);
+	char text[9] = "_putchar";
+	int i = 0;
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(text[i]);
+	}
+	_putchar('\n');
+
+	return (0);
 }
