@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * print_alphabet - main block
- * Description: function that prints the alphabet.
+ * print_alphabet - print alphabet
+ *
+ * Return: void
  */
 void print_alphabet(void)
 {
-          char letter;
+	char letter = 'a';
 
-          for (letter = 'a'; letter <= 'z'; letter++)
-          {
-            _putchar(letter);
-          }
-          _putchar('\n');
+	while (letter <= 'z')
+	{
+		_putchar(letter);
+		letter++;
+	}
+	_putchar('\n');
 }
