@@ -4,14 +4,17 @@
  * more_numbers - entry point
  * Description: Prints the numbers with _putchar
  * @number: this is the integer
+ * @y: this is the number
+ * @x: this is the number
  * @count: this is the number
  * Return: void
  */
 void more_numbers(void)
 {
-        int number, x, y, count;
+        int count = 1;
+        int number, x, y;
 
-        for (count = 0; count <= 9; count++)
+        while (count++ <= 10)
         {
                for (number = 0; number <= 14; number++)
 		{
