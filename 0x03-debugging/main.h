@@ -1,12 +1,11 @@
-#ifndef ALX
-#define ALX
+#ifndef MAIN_H
+#define MAIN_H
 
-/*
-* File:alx
-* Author: Bostone
-* Description:This is file containing all declations of all functions
-*/
+#include <stdio.h>
 
-void positive_or_negative(int i)
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+void print_remaining_days(int month, int day, int year);
+int convert_day(int month, int day);
 
-#endif
+#endif /* MAIN_H */
