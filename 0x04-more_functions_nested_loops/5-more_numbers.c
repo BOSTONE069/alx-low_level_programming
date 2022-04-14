@@ -1,33 +1,19 @@
 #include "main.h"
-
 /**
- * more_numbers - entry point
- * Description: Prints the numbers with _putchar
- * @number: this is the integer
- * @y: this is the number
- * @x: this is the number
- * @count: this is the number
- * Return: void
+ * more_numbers - Prints the numbers 0-14 ten times.
  */
 void more_numbers(void)
 {
-        int count = 1;
-        int number, x, y;
+	int num, count;
 
-        while (count++ <= 10)
-        {
-               for (number = 0; number <= 14; number++)
+	for (count = 0; count <= 9; count++)
+	{
+		for (num = 0; num <= 14; num++)
 		{
-                        x = (number / 10);
-                        y = (number % 10);
-
-			if (number > 9)
-				_putchar( x + '0');
-
-			_putchar(y + '0');
+			if (num > 9)
+				_putchar((num / 10) + '0');
+			_putchar((num % 10) + '0');
 		}
-                _putchar('\n');
-        }
-
-
+		_putchar('\n');
+	}
 }
