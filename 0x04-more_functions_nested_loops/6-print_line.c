@@ -5,6 +5,7 @@
  *
  * Description: Prints lines
  * @lines: number of lines
+ * @n: number of entries
  * Return: void
  */
 void print_line(int n)
