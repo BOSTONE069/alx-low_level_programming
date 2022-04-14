@@ -2,7 +2,7 @@
 #define ALX
 
 /*
-* File:alx 
+* File:alx
 * Author: Bostone
 * Description:This is file containing all declations of all functions
 */
