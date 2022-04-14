@@ -4,25 +4,26 @@
  * print_line - entry point
  *
  * Description: Prints lines
- * @i: number of lines
+ * @lines: number of lines
  * Return: void
  */
 void print_line(int n)
 {
-        int i = '_';
-        int count=0;
 
-        while(count++ <= n)
-        {
-                if (n > 0)
-                {
-                        _putchar(i);
-                }
-                else
-                {
-                _putchar('\n');
-                }
-        }
+        int lines;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (lines = 1; lines <= n; lines++)
+		{
+			_putchar('_');
+		}
+		_putchar('\n');
+	}
 
 
 }
