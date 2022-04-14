@@ -4,14 +4,13 @@
  * print_line - entry point
  *
  * Description: Prints lines
- * @lines: number of lines
- * @n: number of entries
+ *@n: number of lines
  * Return: void
  */
+
 void print_line(int n)
 {
-
-        int lines;
+	int num_lines;
 
 	if (n <= 0)
 	{
@@ -19,12 +18,10 @@ void print_line(int n)
 	}
 	else
 	{
-		for (lines = 1; lines <= n; lines++)
+		for (num_lines = 1; num_lines <= n; num_lines++)
 		{
 			_putchar('_');
 		}
 		_putchar('\n');
 	}
-
-
 }
