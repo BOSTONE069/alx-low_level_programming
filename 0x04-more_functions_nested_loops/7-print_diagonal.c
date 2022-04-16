@@ -1,18 +1,16 @@
 #include "main.h"
 
 /**
- * print_diagonal - main function for printing diagonal elements
+ * print_diagonal - entry point
  *
  * Description: Prints diagonals
- *
  *@n: number of spaces
- *@lines: number of lines to be printed
- *@row: number of rows to be printed
  * Return: void
  */
+
 void print_diagonal(int n)
 {
-	int row, lines;
+	int row, num_lines;
 
 	if (n <= 0)
 	{
@@ -24,7 +22,7 @@ void print_diagonal(int n)
 		{
 			if (row > 1)
 			{
-				for (lines = 1; lines <= row - 1; lines++)
+				for (num_lines = 1; num_lines <= row - 1; num_lines++)
 				{
 				_putchar(' ');
 				}
