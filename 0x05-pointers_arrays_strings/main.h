@@ -10,7 +10,7 @@
  *Description: This file is the main header file and it contains all the decrations of all the functions in the program
  * */
 
-int _putchar(char c);
+int putchar(char c);
 
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
