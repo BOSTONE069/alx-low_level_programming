@@ -7,10 +7,10 @@
  */
 void print_array(int *a, int n)
 {
-int = i;
-int length = sizeof(n) / sizeof(n[0]);
+int i;
+int a = sizeof(n) / sizeof(n[0]);
 
-for (i = 0; i < length; i++)
+for (i = 0; i < a; i++)
 {
 printf("%d,\n", n[i]);
 }
