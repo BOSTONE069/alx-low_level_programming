@@ -7,5 +7,5 @@
  */
 void print_rev(char *s)
 {
-return (strrev(s));
+_putchar(strrev(s));
 }
