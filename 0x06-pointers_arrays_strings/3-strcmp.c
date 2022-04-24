@@ -7,10 +7,11 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-int length;
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
 
-length = strcmp(s1, s2);
-_putchar(length);
-
-return (0);
+	return (*s1 - *s2);
 }
