@@ -1,11 +1,11 @@
-#ifndef ALX
-#define ALX
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- *File:alx
- *Author: Bostone
- *Description: This file is the main header file and it contains all the decrations of all the functions in the program
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <unistd.h>
 
 int _putchar(char c);
 int _islower(int c);
@@ -28,4 +28,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif
+#endif /* MAIN_H */

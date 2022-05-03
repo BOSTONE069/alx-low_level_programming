@@ -1,1 +1,5 @@
-This is the creation of static libraries
+# 0x09-Static Libraries
+
+## Overview
+
+ This project involves creation of different static libraries for use in compilation of various programs.
