@@ -7,8 +7,6 @@
  *Description: This file is the main header file and it contains all the decrations of all the functions in the program
  */
 
-#include <string.h>
-#include <stdio.h>
 
 int _putchar(char c);
 
