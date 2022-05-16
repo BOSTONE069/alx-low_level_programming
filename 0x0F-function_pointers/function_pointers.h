@@ -1,10 +1,12 @@
-#ifdef ALX
+#ifndef ALX
 #define ALX
 /**
  *File:alx
  *Author: Bostone
  *Description: This file is the main header file and it contains all the decrations of all the functions in the program
  */
+
+#include <stdlib.h>
 
 int _putchar(char c);
 
