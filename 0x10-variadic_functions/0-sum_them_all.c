@@ -4,6 +4,7 @@
 /**
  * sum_them_all - function that returns the sum of all its parameters
  * @n: const unsigned int passed from main
+ * @...: A variable for number of parameters
  *
  * Return: sum of all the parameters or 0
  */
