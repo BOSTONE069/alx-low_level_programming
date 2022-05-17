@@ -26,4 +26,8 @@ typedef struct vartype
 	void (*f)(va_list);
 } var_t;
 
+void c_char(va_list args);
+void i_integer(va_list args);
+void f_float(va_list args);
+void s_string(va_list args);
 #endif
