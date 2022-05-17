@@ -13,31 +13,37 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i, j;
-	char *ptr = "";
+	unsigned int i, n;
+	char *str;
 
-	var_t type[] = {
-		{"c", c_char},
-		{"i", i_integer},
-		{"f", f_float},
-		{"s", s_string},
-		{NULL, NULL}
-	};
-
+	n = 0;
+	while (format[n])
+		n++;
 	va_start(args, format);
 	i = 0;
-	while (format && format[i])
+	while (format[i])
 	{
-		j = 0;
-		while (type[j].vartype)
+		if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+		    format[i] == 's')
 		{
-			if (format[i] == *type[j].vartype)
+			switch (format[i])
 			{
-				printf("%s", ptr);
-				type[j].f(args);
-				ptr = ", ";
+			case 'c':
+				printf("%c", va_arg(args, int));
+				break;
+			case 'i':
+				printf("%i", va_arg(args, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double));
+				break;
+			case 's':
+				str = va_arg(args, char *);
+				helper(str);
+				break;
 			}
-			j++;
+			if (i != n - 1)
+				printf(", ");
 		}
 		i++;
 	}
@@ -45,58 +51,22 @@ void print_all(const char * const format, ...)
 	va_end(args);
 }
 
+/*
+ * if (n == 0)
+ * return;
+ */
+
 /**
- * c_char - prints a char
- * @args: parameter passed from main
+ * helper - check for NULL strings
+ * @str: pointer to string
  *
  * Return: void
  */
 
-void c_char(va_list args)
+void helper(char *str)
 {
-	printf("%c", va_arg(args, int));
-}
-
-/**
- * i_integer - prints an integer
- * @args: parameter passed from main
- *
- * Return: void
- */
-
-void i_integer(va_list args)
-{
-	printf("%i", va_arg(args, int));
-}
-
-/**
- * f_float - prints a float
- * @args: parameter passed from main
- *
- * Return: void
- */
-
-void f_float(va_list args)
-{
-	printf("%f", va_arg(args, double));
-}
-
-/**
- * s_string - prints a string
- * @args: parameter passed from main
- *
- * Return: void
- */
-
-void s_string(va_list args)
-{
-	char *str;
-
-	str = va_arg(args, char *);
 	if (str == NULL)
-	{
 		printf("(nil)");
-		return;
-	}
-	printf("%s", str);
+	else
+		printf("%s", str);
 }
