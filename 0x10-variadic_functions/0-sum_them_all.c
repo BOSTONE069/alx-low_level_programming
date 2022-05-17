@@ -3,9 +3,7 @@
 
 /**
  * sum_them_all - function that returns the sum of all its parameters
- * @n: const unsigned int passed from main,
- * count argument indicating the number
- * of variadic arguments
+ * @n: const unsigned int passed from main
  *
  * Return: sum of all the parameters or 0
  */
