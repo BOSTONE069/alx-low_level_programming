@@ -2,24 +2,24 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - function that returns the sum of all its parameters
- * @n: const unsigned int passed from main
- * @...: A variable for number of parameters
+ * sum_them_all - Returns the sum of all its paramters.
+ * @n: The number of paramters passed to the function.
+ * @...: A variable number of paramters to calculate the sum of.
  *
- * Return: sum of all the parameters or 0
+ * Return: If n == 0 - 0.
+ *         Otherwise - the sum of all parameters.
  */
-
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list args;
-	int sum = 0;
-	unsigned int i;
+	va_list nums;
+	unsigned int index, sum = 0;
 
-	if (n == 0)
-		return (0);
-	va_start(args, n);
-	for (i = 0; i < n; i++)
-		sum += va_arg(args, int);
-	va_end(args);
+	va_start(nums, n);
+
+	for (index = 0; index < n; index++)
+		sum += va_arg(nums, int);
+
+	va_end(nums);
+
 	return (sum);
 }
