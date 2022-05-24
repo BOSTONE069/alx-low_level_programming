@@ -3,9 +3,7 @@
 /**
  *Author: Bostone Ochieng
  *File: ALX_LIST
- *Description: This is the main header file and it contains all the declarations of all functions is this work
  */
-
 
 #include <stdio.h>
 #include <stdarg.h>
