@@ -1,5 +1,5 @@
-#ifndef BIT
-#define BIT
+#ifndef BIT_H
+#define BIT_H
 
 /*
  * File: Main.h
