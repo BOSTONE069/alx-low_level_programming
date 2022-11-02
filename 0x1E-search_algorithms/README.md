@@ -1,7 +1,1 @@
-# Data Structures and Algorithms
-
-**Search Algorithms**
-
-<p align="center">
-    <img src="searching_algorithms1.png">
-</p>
+0x1E. C - Search Algorithms
